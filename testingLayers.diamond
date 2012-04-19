@@ -1,0 +1,25 @@
+loop(something){
+    This is a line;
+    This is another line;
+
+    loop(test){
+        nested;
+        loop(another one){
+            whoooo;
+            loop(woot){
+                more;
+            }
+        }
+    }
+
+    more(inner){
+        yay text;
+    }
+}
+
+crasy(){
+    loops;
+    woot(){
+        win;
+    }
+}
