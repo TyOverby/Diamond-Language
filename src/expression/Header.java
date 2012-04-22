@@ -6,15 +6,16 @@ package expression;
  * Time: 9:12 PM
  */
 public class Header extends Expression{
-    private String header;
+    private final String header;
+    private final int startPos;
     
     public Header(int startPos, String header){
         this.header = header;
+        this.startPos = startPos;
     }
 
     @Override
-    public String toAssembly() {
-        return null;
+    public void toAssembly(String tabs) {
     }
 
     @Override
@@ -23,12 +24,17 @@ public class Header extends Expression{
     }
 
     @Override
-    public void print(int printLevel) {
+    public void print(String tabs) {
 
     }
 
     @Override
     public boolean inRange(int location) {
-        return false;  // This is already handled in the Chunk class
+        return false;  // This is already handled in the FakeChunk class
+    }
+
+    @Override
+    public int getStartPos() {
+        return this.startPos;
     }
 }

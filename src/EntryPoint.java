@@ -9,7 +9,7 @@ import java.io.File;
  */
 public class EntryPoint {
     public static void main(String... args){
-        Parser.load(new File("testingLayers.diamond"));
+        Parser.load(new File("TestingFunctions.diamond"));
 
         Parser.firstPass();
     }

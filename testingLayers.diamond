@@ -7,19 +7,20 @@ loop(something){
         loop(another one){
             whoooo;
             loop(woot){
-                more;
+                another;
             }
         }
     }
 
-    more(inner){
+    loop(inner){
         yay text;
+        killer text;
     }
 }
 
-crasy(){
+loop(){
     loops;
-    woot(){
+    loop(){
         win;
     }
 }

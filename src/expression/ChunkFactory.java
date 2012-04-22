@@ -8,31 +8,35 @@ import java.util.*;
  * Time: 10:51 PM
  */
 public class ChunkFactory {
-    private static List<Chunk> chunkList = new ArrayList<Chunk>();
+    private static List<FakeChunk> fakeChunkList = new ArrayList<FakeChunk>();
 
-    public static Chunk getChunk(int startPos){
+    public static FakeChunk getChunk(int startPos){
         // Try to find the requested chunk
-        for(Chunk c: chunkList){
+        for(FakeChunk c: fakeChunkList){
             if(c.startPos==startPos){
                 return c;
             }
         }
 
         // We didn't find it, so we will make a new one.
-        Chunk c = new Chunk(startPos);
-        chunkList.add(c);
+        FakeChunk c = new FakeChunk(startPos);
+        fakeChunkList.add(c);
         return c;
     }
 
-    public static List<Chunk> getChunkList(){
-        return chunkList;
+    public static List<FakeChunk> getFakeChunkList(){
+        return fakeChunkList;
     }
     
     public static void print(){
-        for(Chunk chunk:chunkList){
-            if(!chunk.hasParent()){
-                chunk.print(0);
+        for(FakeChunk fakeChunk : fakeChunkList){
+            if(!fakeChunk.hasParent()){
+                fakeChunk.print("");
             }
         }
+    }
+
+    public static void clean(){
+        fakeChunkList.clear();
     }
 }

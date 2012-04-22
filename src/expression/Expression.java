@@ -6,9 +6,12 @@ package expression;
  * Time: 10:05 PM
  */
 public abstract class Expression {
-    public abstract String toAssembly();
+    
+    public abstract void toAssembly(String tabs);
 
-    public abstract void print(int printLevel);
+    public abstract void print(String tabs);
 
     public abstract boolean inRange(int location);
+    
+    public abstract int getStartPos();
 }

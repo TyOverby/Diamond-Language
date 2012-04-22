@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Diamond2.iml" filepath="$PROJECT_DIR$/Diamond2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java GUI/Java GUI.iml" filepath="$PROJECT_DIR$/Java GUI/Java GUI.iml" />
     </modules>
   </component>
 </project>
